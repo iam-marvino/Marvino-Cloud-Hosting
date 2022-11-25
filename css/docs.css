@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{box-sizing: border-box;padding: o;margin: 0;font-family: 'Lato', sans-serif;}
+
+
+/* navbar */ 
+.navbar{background-color:rgb(21, 211, 119);color:white;}
+
+.navbar-container{max-width:1100px;margin:0 auto;display: flex;flex-wrap: nowrap;flex-direction: row;justify-content: space-between;padding-top:10px;height:70px;}
+
+ul{display: flex;list-style: none;gap:30px;padding-top:10px;margin:10px;margin-right:50px;}
+
+li a{text-decoration: none;color: white;padding-bottom: 10px;padding-left:  0.5rem;padding-right:0.5rem;}
+
+li a:hover{border-bottom:2px solid white;}
+
+.navbar-container h1 {font-weight: 100;}
+
+a{text-decoration: none;}
+
+
+/* Docs */ 
+
+.docs{background-color:rgb(21, 211, 119);color: white;}
+
+.docs-container{width:1100px;margin:0 auto;height:300px;display: flex;justify-content: space-between;;height:300px;}
+
+.docs-text{width:80%;padding-top:5rem;}
+
+.docs-text h1 {font-size:4rem;font-weight: 100;margin-bottom:1rem;}
+
+
+/* Main */ 
+
+main{background-color: white;}
+
+.main-container{max-width:1100px;margin:0 auto;display: flex;flex-direction: row;justify-content: space-between;gap:2.5rem;padding-top: 3rem;height: 57rem;}
+
+.essential-card{background-color: rgb(244, 244, 244);padding: 2rem;width:20rem;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.2);height: 35rem;margin-left:5rem;}
+
+.essential-card p{border-bottom:1px solid rgb(204, 204, 204);padding: 1rem;text-align: left;}
+
+.essential-card h3{padding: 1rem;}
+
+.essential-card p:hover{transform: skew(0.9);cursor: pointer;}
+
+.introduction-card{border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.2);background-color: white;width:40rem;height: 51rem;}
+
+.introduction-card h3{padding:1rem;}
+
+.introduction-card p{padding-left:1rem;line-height: 1.5rem;}
+
+.introduction-card h4{padding-left:1rem;background-color: rgb(92, 184, 92);margin:1rem 1rem; padding: 1rem;color: white;}
+
+.introduction-card button{margin-left:1rem;padding:1rem;background-color: rgb(248, 79, 57);width:9rem;text-align: center;border: 0;border-radius: 0.3rem;font-size: 1rem;margin-top:1rem;}
+
+.introduction-card a {text-decoration: none;color: white;}
+
+#bw{background-color:rgb(51, 51, 51) ;color: white;padding:0.7rem;margin:0 1rem;}
+
+#bp{margin:0.5rem 0;}
+
+
+
+/* Footer */ 
+
+.footer{background-color:rgb(5, 57, 32);color:white;}
+
+.footer-container{max-width:1300px;margin:0 auto;display: flex;flex-direction:row;justify-content: space-around;padding-top: 100px;height:auto;padding-bottom:5rem;}
+
+.footer-text{line-height:2.5rem;}
+
+.footer-text h1,p {font-weight: 100;}
+
+.footer-list h4 {font-weight: 100;}
+
+.footer-list{display: flex;flex-direction:column;line-height:25px;}
+
+.footer-list a {color: white;text-decoration: none;}
+
+.icon-list {display: flex;flex-direction:row;width:300px;gap:15px;}
+
+
+/* Media query for tablets  and small screen laptops */ 
+@media (max-width:1300px) {
+    .docs-container,.main-container{display: flex;flex-direction: column;height: auto;max-width:0 auto;width:100%;align-items: center;}
+
+    .navbar-container{width:90%;}
+
+    .docs-container,img{text-align: center;width:60%;}
+
+    .essential-card,.introduction-card{width:90%;margin-left:0rem;height: auto;}
+
+    .main-container{margin-bottom:2rem;}
+
+    .introduction-card{padding-bottom: 2rem;}
+
+    .docs-text{padding-top:0rem;}
+
+    .footer-container{width:90%;margin:0 auto;padding-bottom:5rem;gap:2rem;}
+    
+    
+}
+
+
+/* Media query for Mobile */ 
+@media (max-width:500px)  {
+    .navbar{height:10rem;}
+
+    .navbar-container{height:8rem;display: flex;flex-direction: column;align-items: center;padding-top:1.3rem;}
+
+    .navbar-container h1{text-align: center;}
+
+    ul{background-color: rgba(0,0,0,0.1);padding:0.9rem;width:90%;gap:10px;justify-content: space-between;}
+
+    nav{width:80%;margin:0 auto;}
+    
+    .essential-card,.introduction-card{width:300px;}
+
+    .footer-container{display: flex;flex-direction: column;}
+
+    .docs-text{padding-top:1rem;}
+}

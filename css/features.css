@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{box-sizing: border-box;padding: o;margin: 0;font-family: 'Lato', sans-serif;}
+
+/* navbar */ 
+.navbar{background-color:rgb(21, 211, 119);color:white;}
+
+.navbar-container{max-width:1100px;margin:0 auto;display: flex;flex-wrap: nowrap;flex-direction: row;justify-content: space-between;padding-top:10px;height:70px;}
+
+ul{display: flex;list-style: none;gap:30px;padding-top:10px;margin:10px;margin-right:50px;}
+
+li a{text-decoration: none;color: white;padding-bottom: 10px;padding-left:  0.5rem;padding-right:0.5rem;}
+
+li a:hover{border-bottom:2px solid white;}
+
+.navbar-container h1 {font-weight: 100;}
+
+a{text-decoration: none;}
+
+
+/* Features */ 
+.Features{background-color:rgb(21, 211, 119);color: white;}
+
+.Features-container{height: 250px;max-width: 1100px;margin:0 auto;height: 250px;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;height: 250px;flex-basis:auto;flex-grow:0;flex-shrink:1;}
+
+.Features-text{padding-top:60px;width:45%;}
+
+.Features-text h1{font-size: 65px;font-weight: 100;}
+
+.Features-text p{font-size: 20px;margin-top: 10px;line-height:30px;}
+
+.Features-image{margin-right:50px;margin-top:2rem;}
+
+
+/* Platform */ 
+.Platform {background-color:rgb(244, 244, 244) ;color: black;}
+
+.Platform-container{height: 320px;width:1100px;margin:0 auto;height: 320px;display: flex;}
+
+.Platform-text{padding-top:90px;width: 40%;}
+
+.Platform-image{margin-left:300px;margin-top:30px;}
+
+.Platform-text h1 {font-weight:100;margin-bottom:10px;}
+
+.Platform-text p {line-height:20px;font-weight: 100;}
+
+/* Grid */ 
+
+.Grid-Area{background-color: white;}
+
+.grid-container{max-width:1100px;margin:0 auto;min-height:600px;}
+
+.grid-items{background-color: white;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.2);padding:40px;margin:10px;height: 150px;display: flex;gap:0.5rem;}
+
+.grid-items P{padding-top:0.5rem;}
+
+.grid{height:100%;display: grid;grid-template-columns:1fr 1fr 1fr;grid-template-areas:'g1 g1 g1' 'g2 g2 g3' 'g4 g5 g6' ;margin-top:40px;}
+
+
+#g1 {grid-area: g1;}
+
+#g2 {grid-area:g2;}
+
+#g3 {grid-area:g3;}
+
+#g4 {grid-area:g4;}
+
+#g5 {grid-area:g5;}
+
+#g6 {grid-area:g6;}
+
+
+/* Footer */ 
+
+.footer{background-color:rgb(5, 57, 32);color:white;}
+
+.footer-container{max-width:1300px;margin:0 auto;display: flex;flex-direction:row;justify-content: space-around;padding-top: 100px;height:auto;padding-bottom:5rem;}
+
+.footer-text{line-height:2.5rem;}
+
+.footer-text h1,p {font-weight: 100;}
+
+.footer-list h4 {font-weight: 100;}
+
+.footer-list{display: flex;flex-direction:column;line-height:25px;}
+
+.footer-list a {color: white;text-decoration: none;}
+
+.icon-list {display: flex;flex-direction:row;width:300px;gap:15px;}
+
+
+
+/* Media query for tablets  and small screen laptops */ 
+@media (max-width:1300px) {
+    .Features-container,.Platform-container{display: flex;flex-direction: column;}
+
+    .navbar-container{width:90%;}
+
+    .Features-container{height:auto;align-items: center;gap:1rem;width: auto;}
+     
+    .Features-text {width:70%;margin:0 auto;}
+
+    .Features-text h1{text-align: center;}
+
+    .Features-text p{text-align: center;}
+
+    .Features-image{height:60%;width:30%;margin:0 auto;}
+
+    .Platform-container{height:auto;align-items: center;gap:1rem;width: auto;}
+
+    .Platform-image{height:60%;width:50%;margin:0 auto;}
+
+    .Platform-text h1{text-align: center;}
+
+    .Platform-text p{text-align: center;}
+
+    .Platform-text {width:70%;margin:0 auto;}
+
+    .grid{display: flex;flex-direction: column;width:90%;margin:0 auto;gap:1rem;}
+
+    .grid-container{margin-bottom:3rem;margin-top:3rem;}
+
+    .footer-container{width:90%;margin:0 auto;padding-bottom:5rem;}
+
+    .footer-text h1,p{margin-bottom: 1rem;}
+    
+}
+
+
+
+/* Media query for Mobile */ 
+@media (max-width:500px)  {
+    .navbar{height:10rem;}
+
+    .navbar-container{height:8rem;display: flex;flex-direction: column;align-items: center;padding-top:1.3rem;}
+
+    .navbar-container h1{text-align: center;}
+
+    ul{background-color: rgba(0,0,0,0.1);padding:0.9rem;width:90%;gap:10px;justify-content: space-between;}
+
+    nav{width:80%;margin:0 auto;}
+
+    .Features-text {padding-top:0;}
+
+    .Platform-text {padding-top:1.5rem;}
+    
+    .grid-items{display:flex;flex-direction: column;height: auto;}
+
+    .footer-container{display: flex;flex-direction: column;}
+
+    .icon-list{margin-top:3rem;}
+
+
+}
